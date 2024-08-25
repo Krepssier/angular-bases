@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1></h1>
+
+    <script>
+
+        function ejemplo01 (){
+            let nota = 4;
+        console.log("He realizado mi examen. Mi resultado es el siguiente:");
+
+        switch (nota) {
+            case 10:
+                console.log("me ejecuto, soy el 10");
+            case 9:
+                console.log("me ejecuto, soy el 9");
+                calificacion = "Sobresaliente";
+                break;
+            case 8:
+                console.log("me ejecuto, soy el 8");
+            case 7:
+                console.log("me ejecuto, soy el 7");
+                calificacion = "Notable";
+                break;
+            case 6:
+                console.log("me ejecuto, soy el 6");
+                calificacion = "Bien";
+                break;
+            case 5:
+                console.log("me ejecuto, soy el 5");
+                calificacion = "Suficiente";
+                break;
+            case 4:
+                console.log("me ejecuto, soy el 4");
+            case 3:
+                console.log("me ejecuto, soy el 3");
+            case 2:
+                console.log("me ejecuto, soy el 2");
+            case 1:
+                console.log("me ejecuto, soy el 1");
+            case 0:
+                console.log("me ejecuto, soy el 0");
+                calificacion = "Insuficiente";
+                break;
+            default:
+                // Cualquier otro caso
+                calificacion = "Nota errónea";
+                break;
+        }
+
+        console.log("He obtenido un", calificacion);
+
+        }
+
+        // ejemplo01();
+
+        let opcion = prompt("Elige el menú");
+        switch(opcion){
+            case "3":{
+                console.log("salir")
+                break
+            }
+            case "2":{
+                console.log("dibujar")
+                break
+            }
+            case "1":{
+                console.log("start")
+                break
+            }
+            default:
+                console.log("error")
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

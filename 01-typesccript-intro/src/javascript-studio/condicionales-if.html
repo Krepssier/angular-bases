@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1></h1>
+
+    <script>
+
+        function condicional01() {
+
+            console.log("He realizado mi examen.");
+
+            let calificacion = 5;
+
+            if (calificacion >= 5) {
+                console.log("He aprobado");
+            } else {
+                console.log("He suspendido");
+            }
+        }
+        // condicional01();
+
+        function condicional02() {
+            console.log("He realizado mi examen.");
+            let calificacion = 5;
+            if (calificacion >= 5) console.log("He aprobado");
+            else console.log("He suspendido");
+            let nota = 10;
+        }
+        // condicional02();
+
+        function condicional03() {
+            let nota = 10;
+            console.log("He realizado mi examen.");
+
+            // Condición if - else if - else
+            if (nota < 5) {
+                calificacion = "Insuficiente";
+            } else if (nota < 6) {
+                calificación = "Suficiente";
+            } else if (nota < 7) {
+                calificacion = "Bien";
+            } else if (nota < 9) {
+                calificacion = "Notable";
+            } else {
+                calificacion = "Sobresaliente";
+            }
+
+            console.log("He obtenido un", calificacion);
+        }
+        // condicional03();
+
+        function condicional04() {
+            nota = 6.5
+            // console.log("He realizado mi examen.")
+
+            if (nota >= 9) {
+                calificacion = "sobresaliente"
+            } else if (nota >= 7) {
+                calificacion = "notable"
+            } else if (nota >= 6) {
+                calificacion = "bien"
+            } else if (nota >= 5) {
+                calificacion = "suficiente"
+            } else {
+                calificacion = "insuficiente"
+            }
+
+            console.log("He obtenido un", calificacion);
+        }
+
+        // condicional04();
+
+        function condicional05() {
+            // este código aunque parece que está bien, el orden de las 
+            // condicionales no es correcto, por lo tanto el resultado no
+            // es el esperado   
+            //¡¡¡OJO CON EL ORDEN!! SI ENCUENTRA UNA VERDADERA LA EJECUTA
+            // Y YA NO EJECUTA MÁS
+            nota = 6.5
+            console.log("He realizado mi examen.")
+            if (nota >= 5) {
+                calificacion = "suficiente"
+            }
+            else if (nota >= 6) {
+                calificacion = "bien"
+            }
+            else if (nota >= 7) {
+                calificacion = "notable"
+            }
+            else if (nota >= 9) {
+                calificacion = "sobresaliente"
+            }
+            else {
+                calificacion = "insuficiente"
+            }
+
+            // console.log("He obtenido un", calificacion);
+        }
+        // condicional05();
+
+
+        function condicional06() {
+            nota = 8
+            console.log("He realizado mi examen.")
+
+            //condicional if
+            if (nota >= 5) {
+                console.log("He obtenido un suficiente")
+            }
+
+            //condicional if- else if- else
+            if (nota >= 6) {
+                console.log("He obtenido un bien")
+            }
+            else if (nota >= 7) {
+                console.log("He obtenido un notable")
+            }
+            else if (nota >= 9) {
+                console.log("He obtenido un sobresaliente")
+            }
+            else {
+                console.log("He obtenido un sobresaliente")
+            }
+        }
+        // condicional06();
+
+        function condicional07() {
+            nota = 8
+            console.log("He realizado mi examen.")
+
+            if (nota < 5) {
+                console.log("He obtenido un insuficiente")
+            }
+            if (nota >= 5) {
+                console.log("He obtenido un suficiente")
+            }
+            if (nota >= 6) {
+                console.log("He obtenido un bien")
+            }
+            if (nota >= 7) {
+                console.log("He obtenido un notable")
+            }
+            if (nota >= 9) {
+                console.log("He obtenido un sobresaliente")
+            }
+
+        }
+        //condicional07();
+
+
+        /*Ejercicio 1: Determinar si un número es positivo, negativo o cero
+        Descripción: Escribe un programa que pida al usuario que ingrese un número y luego determine si el número es positivo, negativo o cero.
+        
+        Pseudocódigo:
+        
+        Solicita al usuario que ingrese un número.
+        Si el número es mayor que 0, muestra "El número es positivo".
+        Si el número es menor que 0, muestra "El número es negativo".
+        Si el número es 0, muestra "El número es cero".
+        */
+
+        function ejercicio01() {
+            let numero = prompt("Por favor, ingresa un número:");
+
+            if (numero < 0) {
+                alert("negativo")
+            } else if (numero == 0) {
+                alert("El cero")
+            } else {
+                alert("el numero es positivo")
+            }
+
+
+        }
+
+        // ejercicio01()
+
+        /*
+        Descripción: Escribe un programa que pida al usuario que ingrese dos números y determine cuál es mayor, cuál es menor o si son iguales.
+        
+        Pseudocódigo:
+        
+        Solicita al usuario que ingrese el primer número.
+        Solicita al usuario que ingrese el segundo número.
+        Si el primer número es mayor que el segundo, muestra "El primer número es mayor".
+        Si el segundo número es mayor que el primero, muestra "El segundo número es mayor".
+        Si ambos números son iguales, muestra "Ambos números son iguales".
+        
+        */
+        function comparar() {
+            let numero = prompt("Por favor, ingresa un número:");
+            let numero2 = prompt("Por favor, ingresa un número:");
+            if (numero > numero2) {
+                alert("El primer numero es mayor")
+            } else if (numero < numero2) {
+                alert("El segundo numero es mayor")
+            } else {
+                alert("Los numeros son iguales")
+            }
+        }
+        // comparar()
+
+        /*
+            Descripción: Escribe un programa que calcule el precio final de un producto después de aplicar un descuento según el precio inicial.
+
+            Pseudocódigo:
+
+            Solicita al usuario que ingrese el precio del producto.
+            Si el precio es mayor a 100, aplica un 20% de descuento.
+            Si el precio es mayor a 50 pero menor o igual a 100, aplica un 10% de descuento.
+            Si el precio es menor o igual a 50, no aplica descuento.
+            Muestra el precio final después de aplicar el descuento.
+        */
+
+        function descuento() {
+            let precioInicial = prompt("añade precio")
+            let descuentoFinal
+            if (precioInicial > 100) {
+                descuentoFinal = precioInicial - precioInicial * 0.2;
+            }
+            if (precioInicial > 50 && precioInicial <= 100) {
+                descuentoFinal = precioInicial - precioInicial * 0.1
+            }
+            if (precioInicial <= 50) {
+                descuentoFinal = precioInicial
+            }
+            alert("El precio final es " + descuentoFinal)
+        }
+        // descuento()
+
+
+
+        function hayCafe(){
+            let hayCafe = prompt("¿Hay café hecho?, responde S o N.");
+            if(hayCafe.toLowerCase() === "s"){
+                alert("Calentar café.");
+            }else{
+                alert("Hacer café");
+            }
+            alert("servir en taza y añadir azúcar.")
+            let estaDulce = prompt("¿Está dulce?, responde S o N.");
+            
+            while(estaDulce.toLowerCase() != "s"){
+                alert("Añadir azúcar.")
+                estaDulce = prompt("¿Está dulce?, responde S o N.");
+            }
+            alert("tomar café.")
+
+        }
+
+        hayCafe()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
