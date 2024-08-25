@@ -1,4 +1,4 @@
-<h1>{{name}}</h1>
+<h1>{{ name }}</h1>
 
 <dl>
   <td>Nombre</td>
@@ -15,5 +15,18 @@
 
 </dl>
 
-<button class="btn btn-primary mx-2">Cambiar nombre</button>
-<button class="btn btn-primary">Cambiar edad</button>
+<button class="btn btn-primary mx-2"
+  (click)="changeHero()"
+  *ngIf="name !== 'Spiderman'"> <!-- Cualquier valor negativo hará que sea false,
+  como se crean por defecto las variables en Java de una clase-->
+  Cambiar nombre</button>
+<button class="btn btn-primary"
+(click)="changeAge()"
+*ngIf="age !== 25">
+  Cambiar edad
+</button>
+
+<button class="btn btn-primary mx-2"
+(click)="resetForm()">
+  Reset
+</button>
