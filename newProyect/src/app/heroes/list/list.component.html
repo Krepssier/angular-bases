@@ -1,0 +1,14 @@
+<ul>
+  <li *ngFor="let name of heroNames">
+    <strong>{{ name }}</strong>
+  </li>
+</ul>
+
+<p>
+  <span *ngFor="let name of heroNames; let last = last">
+    {{ name }}
+    <span *ngIf="!last">, </span>
+    <span *ngIf="last">.</span>
+  </span>
+</p>
+
